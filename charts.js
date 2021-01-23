@@ -112,8 +112,9 @@ function buildCharts(sample) {
     var barLayout = {
      title: "<b>Top 10 Bacteria Cultures Found</b>",
      margin: {t:30, b:30},
-     bg_colour: 'black',
-     font: {color: "black"}
+     bg_colour: "black",
+     paper_bgcolor:"rgb(7, 192, 216)",
+     font: {color: "white"}
     };
     
     // 10. Use Plotly to plot the data with the layout. 
@@ -141,8 +142,8 @@ function buildCharts(sample) {
         title: "<b>Bacteria Cultures per Sample</b>",
         xaxis: {title: "OTU ID"},
         margins: "autoexpand",
-        paper_bgcolor: "white",
-        font: {color:"black"}
+        paper_bgcolor: "rgb(7, 192, 216)",
+        font: {color:"white"}
     };
   
     // 3. Use Plotly to plot the data with the layout.
@@ -154,7 +155,7 @@ function buildCharts(sample) {
     // Filter the data with the selected number.
     var gaugeTrace = {
       value: wfreqFloat,
-      title: {text: "<b>Belly Button Washting Frequency</b><br>Scrubs per Week"},
+      title: {text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week"},
       type: "indicator",
       mode: "gauge+number",
       gauge: {
@@ -177,8 +178,8 @@ function buildCharts(sample) {
      width: 500,
      height: 400,
      margin: {t:50, b:0},
-     paper_bgcolor:"white",
-     font: {color: "black"}
+     paper_bgcolor:"rgb(7, 192, 216)",
+     font: {color: "white"}
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
